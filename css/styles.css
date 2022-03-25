@@ -11,6 +11,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+ 
+ /* 비디오 크기 설정 */
  .video-foreground iframe {
   width: 500px;
   height: 300px;
