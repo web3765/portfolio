@@ -150,11 +150,11 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <!-- <div class="divider-custom-icon"><i class="fas fa-star"></i></div> --><!--별 아이콘 제거-->
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Contact Section Form-->
@@ -167,51 +167,102 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        
+                        <!-- 수정 : Contact ------------------------------------------------------------------------------------------------------------->
+                        <form id="container-fluid contactForm" data-sb-form-api-token="API_TOKEN">                           
+                            <div class="row">
+                                
+                                <div class="col-lg-6 text-center profile">
+                                    <div class="row">
+                                        <div class="col-md-4 profile_img_wrapper">
+                                            <img class="profile_img" src="assets/img/portfolio/profile_48.png" alt="profile"><br>
+                                        </div>
+                                        <div class="col-md-8 profile_field">
+                                            <div class="h3 mb-2 profile_field_label">Name</div>
+                                            <div class="h4 text-muted profile_field_value">오채영</div><br>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-lg-6 text-center email">
+                                    <div class="row">
+                                        <div class="col-md-4 email_img_wrapper">
+                                            <img class="email_img" src="assets/img/portfolio/email.png" alt="email"><br>
+                                        </div>
+                                        <div class="col-md-8 email_field">
+                                            <div class="h3 mb-2 email_field_label">E-mail</div>
+                                            <div class="h4 text-muted email_field_value">web3765@gmail.com</div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-lg-6 text-center github">
+                                    <div class="row">
+                                        <div class="col-md-4 github_img_wrapper">
+                                            <img class="email_img" src="assets/img/portfolio/github_48.png" alt="github"><br>
+                                        </div>
+                                        <div class="col-md-8 github_field">
+                                            <div class="h3 mb-2 github_field_label">GitHub</div>
+                                            <div class="h4 text-muted github_field_value">github.com/web3765</div><br>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-lg-6 text-center linkedin">
+                                    <div class="row">
+                                        <div class="col-md-4 linkedin_img_wrapper">
+                                            <img class="email_img" src="assets/img/portfolio/linkedin_48.png" alt="linkedin"><br>
+                                        </div>
+                                        <div class="col-md-8 linkedin_field">
+                                            <div class="h3 mb-2 linkedin_field_label">LinkedIn</div>
+                                            <div class="h4 text-muted linkedin_field_value">web3765</div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                          
                             <!-- Name input-->
-                            <div class="form-floating mb-3">
+                            <!-- <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Full name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
+                            </div> -->
+
                             <!-- Email address input-->
-                            <div class="form-floating mb-3">
+                            <!-- <div class="form-floating mb-3">
                                 <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
+                            </div> -->
                             <!-- Phone number input-->
-                            <div class="form-floating mb-3">
+                            <!-- <div class="form-floating mb-3">
                                 <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Phone number</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
+                            </div> -->
                             <!-- Message input-->
-                            <div class="form-floating mb-3">
+                            <!-- <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
+                            </div> -->
                             <!-- Submit success message-->
                             <!---->
                             <!-- This is what your users will see when the form-->
                             <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
+                            <!-- <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">Form submission successful!</div>
                                     To activate this form, sign up at
                                     <br />
                                     <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Submit error message-->
                             <!---->
                             <!-- This is what your users will see when there is-->
                             <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div> -->
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                            <!-- <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button> -->
                         </form>
                     </div>
                 </div>
